@@ -3,31 +3,6 @@ import os
 import shutil
 from speakers import data
 
-
-
-# transcripts = []
-# audios = []
-# missings = []
-
-# for root, folders, files in os.walk(PATH+'/data/voc/'):
-#     for f in files:
-#         if f.endswith('.txt'):
-#             transcripts.append(f.replace('.txt', ''))
-#
-# for root, folders, files in os.walk(BOX_PATH):
-#     for f in files:
-#         if f.endswith('.wav'):
-#             audios.append(f.replace('.wav', ''))
-#
-# for transcript in transcripts:
-#     if transcript in audios:
-#         source = BOX_PATH + transcript + '.wav'
-#         destination = PATH + '/data/voc/audio/' + transcript + '.wav'
-#         shutil.copyfile(source, destination)
-
-
-
-
 local_transcripts = []
 box_audio = []
 simple_local_audio = []

@@ -1,0 +1,3 @@
+library(tidyverse)
+tmp <- read_csv('data/results_for_BAK_Cruz_Aurora.csv')
+

@@ -9,15 +9,22 @@ class data():
         self.dictionary = {}
         self.speaker_to_intervals = {}
         self.recursion = 0
+        self.speaker_to_datasetid = {}
+        self.datasetid_to_speaker = {}
+        self.anonymized_dict = {}
 
 
         self.list_of_speakers()
         self.get_intervals()
 
+
         for speaker in self.speakers:
             self.filter_dictionary(speaker)
 
-        self.speaker_to_datasetid = {}
+        for index, (key, value) in enumerate(self.speaker_to_intervals.iteritems()):
+            self.speaker_to_datasetid[key] = index
+            self.datasetid_to_speaker[index] = key
+            self.anonymized_dict[index] = value
 
 
 

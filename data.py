@@ -33,11 +33,11 @@ class LibriSpeechDataset(torch.utils.data.Dataset):
             subsets = [subsets]
 
         # Check if we have already indexed the files
-        cached_id_to_filepath_location = '/data/LibriSpeech__datasetid_to_filepath__subsets={}__length={}.json'.format(
+        cached_id_to_filepath_location = '/data/librispeech/LibriSpeech__datasetid_to_filepath__subsets={}__length={}.json'.format(
             subsets, length)
         cached_id_to_filepath_location = PATH + cached_id_to_filepath_location
 
-        cached_id_to_sex_location = '/data/LibriSpeech__datasetid_to_sex__subsets={}__length={}.json'.format(
+        cached_id_to_sex_location = '/data/librispeech/LibriSpeech__datasetid_to_sex__subsets={}__length={}.json'.format(
             subsets, length)
         cached_id_to_sex_location = PATH + cached_id_to_sex_location
 

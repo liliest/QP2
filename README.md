@@ -1,7 +1,7 @@
 # Gender classification
 This repository contains files related to my second qualifying paper on voice gender classification using deep neural networks with raw audio as inputs.
 ## Data
-This project uses data from the [Voices of California corpus](http://web.stanford.edu/dept/linguistics/VoCal/index.html). `speakers.py` handles transcripts of many hundreds of sociolinguistic interviews to determine when in the matching recording the interviewee is producing non-overlapping speech.
+This project uses data from the [Voices of California corpus](http://web.stanford.edu/dept/linguistics/VoCal/index.html). `fetch.py` handles downloading relevant audio and transcripts from the VOC master directory from the mounted Box drive. `speakers.py` handles transcripts of many hundreds of sociolinguistic interviews to determine when in the matching recording the interviewee is producing non-overlapping speech.
 Model predictions are calculated and stored in anonymized `.csv` files by `process.py`.
 ## Requirements
 This project was written in Python 2.7.16, and there are tricky interleaving dependencies, particularly with regard to the `pysoundfile` module. I can't guarantee it works on any other version. 

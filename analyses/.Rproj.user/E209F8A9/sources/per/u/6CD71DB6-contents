@@ -1,3 +1,11 @@
 library(tidyverse)
-tmp <- read_csv('data/results_for_BAK_Cruz_Aurora.csv')
+library(lme4)
+library(lmerTest)
+tmp <- read_csv('../results/pitch/pitch_results_for_RED_SiskFranco_Caleen.csv')
 
+tmp %>% ggplot(aes(x=t_center,y = mean)) +
+  geom_point()+
+  geom_smooth(method='lm')
+
+m <- lm(mean~t_center, data=tmp)
+summary(m)

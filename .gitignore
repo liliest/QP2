@@ -2,3 +2,5 @@ data/
 .wav
 .pycg
 .idea/
+.Rproj.user
+.csv
